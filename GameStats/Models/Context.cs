@@ -20,6 +20,10 @@ namespace GameStats.Models
         }
 
         public System.Data.Entity.DbSet<GameStats.DataAccess.GAME> GAMEs { get; set; }
+
+        public System.Data.Entity.DbSet<GameStats.DataAccess.HUMAN> HUMen { get; set; }
+
+        public System.Data.Entity.DbSet<GameStats.DataAccess.CATEGORY> CATEGORies { get; set; }
     
     }
 }

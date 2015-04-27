@@ -25,7 +25,7 @@ namespace GameStats.DataAccess
         public string NAME { get; set; }
         [Display(Name = "Game description")]
         public string DESCRIPTION { get; set; }
-        [Display(Name = "Category")]
+        [Display(Name = "Category ID")]
         public int CATEGORY_ID { get; set; }
     
         public virtual ICollection<GAME_CATEGORY> GAME_CATEGORY { get; set; }

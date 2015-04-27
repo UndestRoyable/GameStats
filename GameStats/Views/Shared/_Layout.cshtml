@@ -6,7 +6,6 @@
     <title>TechnoLogica GameStats</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -21,9 +20,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <!--  <li>@Html.ActionLink("Home", "Index", "Home")</li>  -->
+                    <!--  <li>@Html.ActionLink("About", "About", "Home")</li>  -->
                     <li>@Html.ActionLink("Games", "Index", "Game")</li>
+                    <li>@Html.ActionLink("Categories", "Index", "Category")</li>
+                    <li>@Html.ActionLink("Players", "Index", "Human")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

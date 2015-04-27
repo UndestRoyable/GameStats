@@ -1,11 +1,10 @@
-﻿@model GameStats.DataAccess.GAME
+﻿@model GameStats.DataAccess.CATEGORY
 
 @{
     ViewBag.Title = "Create";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create game</h2>
+<h2>Create category</h2>
 
 
 @using (Html.BeginForm()) 
@@ -21,22 +20,6 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.NAME)
                 @Html.ValidationMessageFor(model => model.NAME)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.DESCRIPTION, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DESCRIPTION)
-                @Html.ValidationMessageFor(model => model.DESCRIPTION)
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.CATEGORY_ID, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.CATEGORY_ID)
-                @Html.ValidationMessageFor(model => model.CATEGORY_ID)
             </div>
         </div>
 

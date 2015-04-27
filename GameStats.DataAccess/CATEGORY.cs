@@ -11,6 +11,7 @@ namespace GameStats.DataAccess
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class CATEGORY
     {
@@ -20,6 +21,7 @@ namespace GameStats.DataAccess
         }
     
         public int ID { get; set; }
+        [Display(Name = "Category name")]
         public string NAME { get; set; }
     
         public virtual ICollection<GAME_CATEGORY> GAME_CATEGORY { get; set; }
